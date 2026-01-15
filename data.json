@@ -1,0 +1,84 @@
+{
+    "1": {
+        "month": "January",
+        "title": "Portfolio Website",
+        "description": "This project is basically the portfolio website that you are viewing right now.",
+        "link": "https://github.com/Torchm4n/portfolio.github.io"
+    },
+
+    "2": {
+        "month": "Febuary",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "3": {
+        "month": "March",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "4": {
+        "month": "April",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+    "5": {
+        "month": "May",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+    
+    "6": {
+        "month": "June",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "7": {
+        "month": "July",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "8": {
+        "month": "August",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "9": {
+        "month": "September",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "10": {
+        "month": "October",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "11": {
+        "month": "November",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    },
+
+    "12": {
+        "month": "December",
+        "title": "Coming Soon",
+        "description": "Default description.",
+        "link": "No link"
+    }
+}
