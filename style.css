@@ -91,3 +91,40 @@ body {
 .project_div:hover {
     opacity: 1;
 }
+
+.project_div p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .nav li {
+        white-space: nowrap;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .project_div {
+        width: 25rem;
+        height: 10rem;
+    }
+
+    .project_div h1 {
+        font-size: 1rem;
+    }
+
+    .project_div h2 {
+        font-size: 0.7rem;
+    }
+
+    .project_div p {
+        font-size: 0.5rem;
+    }
+}

@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         project_div.classList.add("project_div");
         document.body.appendChild(project_div);
 
-        var month_heading = document.createElement("h1");
-        month_heading.textContent = item.month;
-        month_heading.style.color = "rgba(0, 0, 0, 1)";
-        month_heading.style.paddingTop = "1rem";
+        var month = document.createElement("h1");
+        month.textContent = item.month;
+        month.style.color = "rgba(0, 0, 0, 1)";
+        month.style.paddingTop = "1rem";
 
-        var title_heading = document.createElement("h2");
-        title_heading.textContent = item.title;
-        title_heading.style.color = "rgba(0, 0, 0, 1)";
+        var title = document.createElement("h2");
+        title.textContent = item.title;
+        title.style.color = "rgba(0, 0, 0, 1)";
 
         var description = document.createElement("p");
         description.textContent = item.description;
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             });
         };
 
-        project_div.appendChild(month_heading);
-        project_div.appendChild(title_heading);
+        project_div.appendChild(month);
+        project_div.appendChild(title);
         project_div.appendChild(description);
     });
 });
