@@ -104,11 +104,10 @@ body {
 .project_div {
     background-color: #f1511b;
     opacity: 0.5;
-    width: 50rem;
+    width: 100%;
     height: 20rem;
     border-radius: 1rem;
     padding-left: 1rem;
-    margin: 1rem auto;
     cursor: pointer;
 }
 
@@ -172,22 +171,5 @@ body {
 
     .nav.opened .hamburger span:nth-child(3) {
         transform: rotate(-45deg) translate(9px, -10px);
-    }
-
-    .project_div {
-        width: 25rem;
-        height: 10rem;
-    }
-
-    .project_div h1 {
-        font-size: 1rem;
-    }
-
-    .project_div h2 {
-        font-size: 0.7rem;
-    }
-
-    .project_div p {
-        font-size: 0.5rem;
     }
 }
