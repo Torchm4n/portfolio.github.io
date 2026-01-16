@@ -137,7 +137,7 @@ body.no-scroll {
     padding-left: 30%;
 }
 
-.content .name {
+.content h1 {
     color: #ebe4d9;
     font-size: 2rem;
 }
