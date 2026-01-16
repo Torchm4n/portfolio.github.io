@@ -1,11 +1,12 @@
 @keyframes navTextLoad {
     0% {
         opacity: 0;
-        margin-top: 85%;
+        transform: translateY(20px);
     }
     
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -26,15 +27,16 @@ body {
 .nav {
     display: flex;
     background-color: #f1511b;
-    height: 15%;
+    min-height: 4rem;
+    align-items: center;
+    padding: 2rem;
 }
 
 .nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 0 0;
-    align-items: center;
+    margin-left: auto;
 }
 
 .nav li {
@@ -62,14 +64,36 @@ body {
     color: rgba(0, 0, 0, 1);
     text-decoration: underline;
     transform: scale(1.15);
-    font-weight: 1000;
+    font-weight: 900;
+}
+
+.nav .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger span {
+    display: block;
+    height: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    transform: all 0.3s ease;
+}
+
+.nav h1 {
+    animation: navTextLoad 1.5s ease forwards;
 }
 
 .nav .active {
     color: rgba(0, 0, 0, 1);
     text-decoration: underline;
     transform: scale(1.15);
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .nav-bottom {
@@ -98,8 +122,10 @@ body {
 
 @media (max-width: 768px) {
     .nav ul {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center;
+        margin-left: 0;
+        flex-direction: column;
+        display: none;
     }
 
     .nav li {
@@ -107,8 +133,45 @@ body {
     }
 
     .nav a {
-        font-size: 1rem;
         padding: 0.5rem;
+    }
+
+    .nav .hamburger {
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        animation: navTextLoad 1.5s ease forwards;
+        right: 1rem;
+    }
+
+    .nav h1 {
+        margin: 1.5rem auto;
+    }
+
+    .nav.opened {
+        min-height: 99.5vh;
+        background-color: #ebe4d9;
+        flex-direction: column;
+    }
+
+    .nav.opened ul {
+        display: flex;
+    }
+
+    .nav.opened .hamburger {
+        top: 4rem;
+    }
+
+    .nav.opened .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav.opened .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav.opened .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(9px, -10px);
     }
 
     .project_div {
